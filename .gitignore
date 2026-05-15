@@ -1,0 +1,16 @@
+.yarn/install-state.gz
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.local
+
+junit.xml
+coverage/
+.stryker-tmp/
+reports/
+
+*.js.map
+
+ops/docker/docker-compose.override.yml

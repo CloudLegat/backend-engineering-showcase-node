@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noEmit": false
+  },
+  "exclude": [
+    "**/tests",
+    "dist",
+    "jest.config.ts",
+    "node_modules",
+    "vitest.config.mts"
+  ],
+  "extends": "./tsconfig.json"
+}

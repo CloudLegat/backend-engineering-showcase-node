@@ -1,0 +1,41 @@
+{
+  "buildCommand": "swc src --config-file .swcrc",
+  "clearTextReporter": {
+    "reportTests": false
+  },
+  "ignorePatterns": ["dist"],
+  "ignoreStatic": true,
+  "incremental": false,
+  "logLevel": "error",
+  "mutate": [
+    "src/**/*.ts",
+    "!src/web.ts",
+    "!src/libs/**/*.ts",
+    "!src/modules/get-modules.ts",
+    "!src/platform/**/*.ts",
+    "!src/**/*.enum.ts",
+    "!src/**/*.env.ts",
+    "!src/**/*.config.ts",
+    "!src/**/*.error.ts",
+    "!src/**/*.module.ts",
+    "!src/**/*.spec.ts",
+    "!src/**/errors/*",
+    "!src/**/infrastructure/**/*.ts",
+    "!src/**/typeorm/**/*.ts",
+    "!src/**/tests/**/*.ts",
+    "!src/**/user-interface/dto/**/*.ts",
+    "!src/modules/**/application/commands/create-purchase.command.ts"
+  ],
+  "tempDirName": "/tmp/.stryker-tmp",
+  "testRunner": "vitest",
+  "thresholds": {
+    "break": 75,
+    "high": 100,
+    "low": 70
+  },
+  "vitest": {
+    "configFile": "vitest.config.mts",
+    "dir": "./",
+    "related": false
+  }
+}

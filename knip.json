@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "ormconfig.ts",
+    "src/**/typeorm/migrations/**"
+  ],
+  "ignoreBinaries": ["lint"],
+  "ignoreDependencies": ["scriptlint"]
+}
